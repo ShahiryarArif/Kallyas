@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.home-section{
+  position: relative;
+  background-image: url(../img/home-section-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 70rem;
+} 
+
+.para-text {
+  margin-top: 1.5rem;
+  line-height: 2;
+}
+
+/* Help Section */
+
+.help-section {
+  height: 25rem;
+}
+
+.help-section p {
+  text-align: justify;
+  line-height: 2;
+}
+
+.help-section button {
+  background-image: linear-gradient(to right, #00bfff,#0075ff);
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: 100ms ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.help-section button:hover {
+  border: 1px solid transparent;
+}
+
+
+.help-section button:active {
+  border: none;
+  transform: scale(0.95);
+}
+
+.help-section button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0%;
+  height: 15%;
+  width: 50%;
+  opacity: 0.8;
+  border-radius: 50px;
+  
+  /* Declaring our shadow color inherit from the parent (button) */
+  background: inherit;
+  
+  /* Blurring the element for shadow effect */
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+  
+  /* Transition for the magic */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+
+/*
+                                                                  Social Media Section
+*/
+.social-media {
+  background-image: url(../img/social_media_section_background.png);
+  background-size: cover;
+  height: 43rem;
+}
+
+.social-media h3, p {
+  line-height: 2.5;
+}
+
+/*
+                                                                  Analytical Section
+*/
+.analytics-section {
+  background-image: url(../img/analytics_section_background.png);
+  height: 80rem;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 15rem;
+}
+
+.analytics-section img {
+  margin-top: 17rem;
+}
+
+.analytics-section img,
+.analytics-section .heading,
+.analytics-section .left-text {
+  margin-left: 3.5rem;
+}
+
+.heading {
+  font-weight: 100;
+}
+
+.left-text {
+  width: 30%
+}
+/*
+                                                                  Plugin Section
+*/
+.plugin-section {
+  position: relative;
+  background-image: url(../img/plugins_section_background.png);
+  height: 70rem;
+  background-repeat: no-repeat;
+  background-position: top left;
+  text-align: right;
+}
+
+.plugin-section img{
+  margin-top: 25rem;
+}
+
+.right-text {
+  text-align: right;
+  width: 35rem;
+  margin-left: auto;
+}
+
+/*
+
+                                                                  Connection Section
+*/
+.connection-section {
+  background-image: url(../img/connection_section_background.png);
+  height: 50rem;
+  background-repeat: no-repeat;
+  background-position:  top right;
+}
+
+.connection-section img {
+  margin-top: 10rem;
+}
+
+.connection-section .right-text {
+  margin-top: -18rem;
+  margin-right: 10rem;
+}
+
+/*
+
+                                                                  Blue Card Section
+*/
+.blue-card {
+  height: 35rem;
+}
+
+/*
+
+                                                                  Choose Plan
+*/
+.choose-plan {
+  height: 80rem;
+  width: 100%;
+}
+
+.buy-button {
+  background-image: linear-gradient(to right, #00bfff,#0075ff);
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: 100ms ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buy-button:hover {
+  border: 1px solid transparent;
+}
+
+.buy-button:active {
+  border: none;
+  transform: scale(0.95);
+}
+
+.card {
+  transition: all 500ms ease-in;
+}
+
+.card:hover {
+  background: linear-gradient(to right, #00bfff, #0075ff);
+  z-index: 2;
+}
+
+/*
+
+                                                                  Footer
+*/
+
+.footer {
+  background-image: url(../img/footer_background.png);
+  height: 35rem;
+  background-size: cover;  
+  background-repeat: no-repeat;
+}
+
+.footer .row {
+  padding-top: 15rem;
+  margin-left: 8rem;
+}
+
+
+/*
+                                                                  Media Queries
+*/
+/* 
+@media screen and (min-width:320px) and (max-width: 490px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .home-section{
+    height: 50vh;
+    background-size: contain;
+  }
+  .home-section .navbar-brand {
+    width: 20%;
+    height: 20%;
+    margin-top: -40px;
+  }
+  .home-section .navbar-toggler {
+    margin-top: -40px;
+  }
+  .home-section .container-text {
+    width: 50%;
+  }
+  .home-section h1 {
+    margin: -50px auto;
+    text-align: left;
+    font-size: 130%;
+  }
+  .home-section p {
+    margin: -10px 0 10px 2px;
+    padding-left: 10px;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 80%;
+  }
+  .home-section img {
+    padding-left: 11px;
+    margin-top: -50px;
+    width: 60%;
+    height: 60%;
+  }
+ */
+  /*  Help Section */
+/* 
+  .help-section {
+    padding-top: 50px;
+    height: 12vh;
+  }
+
+  .help-section h1 {
+    font-size: 130%;
+  }
+
+  .help-section p {
+    font-size: 80%;
+    line-height: 1.2;
+  }
+
+  .help-section button {
+    width: 30%;
+    height: 40%;
+    font-size: 70%;
+    margin-top: -30px;
+  }
+
+  .help-section div {
+    margin-top: -50px;
+    margin-left: -120px;
+  } */
+
+/* social-media */
+  /* .social-media {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .social-media h3 {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  .social-media p {
+    font-size: 80%;
+    line-height: 1.5;
+  }
+
+  .social-media video {
+    height: 90%;
+    width: 90%;
+  } */
+
+/* analytics-section */
+  /* .analytics-section {
+    background-size: contain;
+  }
+
+  .analytics-section img {
+    margin-left: 93px;
+    width: 5%;
+    height: 1%;
+  }
+
+  .analytics-section h2{
+    margin-top: 150px;
+  }
+
+  .analytics-section h2+p {
+    margin-bottom: 50px;
+  }
+
+  .analytics-section h2,
+  .analytics-section .heading {
+    font-size: 130%;
+  }
+
+  .analytics-section .para {
+    font-size: 80%;
+    line-height: 1.5;
+    width: 75%;
+  }
+
+  .analytics-section .para-above {
+    width: 100%;
+  } */
+
+/*  plugin-section */
+/*   
+  .plugin-section {
+    background-size: contain;
+    background-position: left bottom;
+    text-align: left;
+    height: 85vh;
+    margin-top: 50px;
+  }
+
+  .plugin-section img {
+    width: 10%;
+    height: 1%;
+    margin-left: 72px;
+  }
+
+  .plugin-section .heading {
+    font-size: 150%;
+    margin: 0 auto;
+  }
+
+  .plugin-section p {
+    font-size: 80%;
+    margin-top: -30px;
+    width: 75%;
+    line-height: 1.5;
+  }
+
+  .right-text {
+    text-align: left;
+    margin-right: auto;
+    width: 50%;
+  } */
+
+/*  connection-section */
+/*   
+  .connection-section {
+    background-size: contain;
+    background-position: left bottom;
+    height: 70vh;
+  }
+
+  .connection-section img {
+    width: 15%;
+    height: 1%;
+    margin-top: -10px;
+  }
+
+  .connection-section .heading {
+    font-size: 150%;
+  }
+
+  .connection-section .left-text {
+    font-size: 80%;
+    line-height: 1.5;
+    width: 75%;
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+
+  .connection-section .right-text {
+    text-align: right;
+    font-size: 50%;
+    line-height: 1.5;
+    margin-top: 130px;
+    margin-left: 160px;
+  } */
+
+  /* blue-card */
+/* 
+  .blue-card img {
+    width: 80%;
+    height: 100%;
+  } */
+
+  /* choose-plan */
+/* 
+  .choose-plan {
+    height: min-content;
+  }
+
+  .choose-plan h2 {
+    font-size: 130%;
+  }
+
+  .choose-plan h2+p {
+    font-size: 80%;
+    text-align: justify;
+    width: 75%;
+    margin-left: 50px;
+  }
+
+  .choose-plan .card {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+ */
+  /*  footer  */
+/* 
+  .footer {
+    background-size: contain;
+    height: 20vh;
+  }
+
+  .footer h4 {
+    font-size: 80%;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+
+} */
+
